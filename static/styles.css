@@ -1,1 +1,141 @@
-styles.css
+:root {
+    --primary: #2c6bed;
+    --secondary: #6c757d;
+    --success: #198754;
+    --light-bg: #f8f9fa;
+    --border: #dee2e6;
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Result Cards */
+.result-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.result-header {
+    padding: 15px 20px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+}
+
+.result-body {
+    padding: 20px;
+}
+
+/* Company Info */
+.company-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
+    border: 1px solid var(--border);
+}
+
+/* Email Tags */
+.email-tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.tag-career {
+    background-color: rgba(44, 107, 237, 0.1);
+    color: var(--primary);
+    border: 1px solid rgba(44, 107, 237, 0.3);
+}
+
+.tag-support {
+    background-color: rgba(25, 135, 84, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(25, 135, 84, 0.3);
+}
+
+.tag-info {
+    background-color: rgba(108, 117, 125, 0.1);
+    color: var(--secondary);
+    border: 1px solid rgba(108, 117, 125, 0.3);
+}
+
+/* Opportunity Cards */
+.opportunity-card {
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+
+.opportunity-card:hover {
+    background-color: rgba(44, 107, 237, 0.05);
+    border-color: var(--primary);
+}
+
+/* Action Buttons */
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition: all 0.2s;
+}
+
+.btn-action i {
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .company-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-logo {
+        margin-bottom: 10px;
+    }
+}
