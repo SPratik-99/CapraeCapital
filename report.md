@@ -29,9 +29,6 @@
 - 3x increase in valid contact points
 - Alignment with Caprae's founder-first philosophy
 
-## Design Philosophy
-Combined quality-focused enrichment with quantity-driven expansion to create a holistic lead intelligence tool. Prioritized actionable outputs over raw data volume.
-
 ## Key Components Implemented
 
 ### 1. Company Intelligence Module (Quality Focus)
