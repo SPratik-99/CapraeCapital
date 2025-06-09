@@ -3,7 +3,7 @@
 ## Installation
 ```bash
 git clone https://github.com/SPratik-99/CapreCapital.git
-cd caprae-leadgen
+cd capre_leadgen
 pip install -r requirements.txt
 ```
 
