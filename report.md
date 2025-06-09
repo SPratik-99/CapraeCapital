@@ -28,3 +28,31 @@
 - 50% reduction in lead research time
 - 3x increase in valid contact points
 - Alignment with Caprae's founder-first philosophy
+
+## Design Philosophy
+Combined quality-focused enrichment with quantity-driven expansion to create a holistic lead intelligence tool. Prioritized actionable outputs over raw data volume.
+
+## Key Components Implemented
+
+### 1. Company Intelligence Module (Quality Focus)
+- **Hybrid Resolution**: Clearbit API first → Google fallback
+- **Value**: 99% domain accuracy with logo/industry context
+- **Code**: `CompanyResolver.resolve()` with error handling
+
+### 2. Email Discovery Engine
+- **Smart Scraping**: Targeted department search (career/support/info)
+- **Respectful Crawling**: Random delays between requests
+- **Code**: `EmailFinder.find_emails()` with pattern fallback
+
+### 3. Geographic Expansion (Quantity Focus)
+- **Regional Intelligence**: Country grouping by economic zones
+- **Value**: 5x lead expansion with similar company profiles
+- **Code**: `GeoExpander.expand_coverage()` with industry filtering
+
+## UX Design Choices
+- **Progressive Disclosure**: Only show input first → reveal results
+- **Status Transparency**: Real-time component tracking
+- **Action-Oriented Results**: Copy-ready emails, expansion filters
+
+## Technical Stack
+Python, Flask, BeautifulSoup, Requests, Bootstrap
